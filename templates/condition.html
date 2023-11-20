@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>if conditon</h1>
+        {% if a > b %}  
+          {% if a > c%}
+            <h2>{{a}} isgreater than {{c}}</h2>
+          {% else %}
+            <h2>{{c}} is greater than {{a}}{{b}}</h2>
+        {% endif %}
+        {%else%}
+            {% if b > c %}
+                <h2>{{b}} isgreater than {{c}}</h2>
+            {% else %}
+                <h2>{{c}} is greater than {{a}} {{b}}</h2>
+            {% endif %}
+        {%endif%} 
+    </center>
+</body>
+</html>
